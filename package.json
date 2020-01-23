@@ -1,0 +1,36 @@
+{
+  "name": "protractor-ts-seed",
+  "version": "1.0.0",
+  "description": "Runs Protractor E2E tests from a Typescript setup",
+  "author": {
+    "name": "Narottam Singh",
+    "email": "narottamgla@gmail.com",
+    "skype": "narottam.singh9"
+  },
+  "license": "MIT",
+  "scripts": {
+    "debug": "node --inspect --debug-brk ./node_modules/.bin/protractor tmp/conf.js",
+    "tsc": "tsc",
+    "pretest": "tsc",
+    "test": "tsc & protractor tmp/conf.js",
+    "test-qa": "npm run test"
+  },
+  "dependencies": {
+    "@log4js-node/log4js-api": "^1.0.2",
+    "@types/jasmine": "~3.5.1",
+    "@types/jasminewd2": "~2.0.8",
+    "@types/nconf": "0.10.0",
+    "@types/node": "~13.1.8",
+    "jasmine": "^3.5.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "^5.4.2",
+    "typescript": "~3.7.5"
+  },
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "log4js": "^6.1.0",
+    "log4js-protractor-appender": "^1.1.2",
+    "nconf": "^0.10.0",
+    "ts-node": "^8.6.2"
+  }
+}
